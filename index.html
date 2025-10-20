@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grocery Mart</title>
+
+    <!-- Tailwindcss -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- DaisyUI -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+     <!-- Sora Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Manrope:wght@200..800&family=Roboto:ital,wght@0,100..900;1,100..900&family=Sora:wght@100..800&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <style>
+        .font-sora{
+            font-family: "Work Sans", sans-serif;
+        }
+    </style>
+
+      <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#EFEBE3',
+          }
+        }
+      }
+    }
+  </script>
+
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+
+</head>
+
+<body class="font-sora">
+    <!-- Header Section -->
+      <header>
+        <nav>
+            <div class="navbar max-w-7xl mx-auto px-6 py-2 shadow-sm">
+  <div class="navbar-start">
+    <div class="dropdown">
+      <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /> </svg>
+      </div>
+      <ul
+        tabindex="-1"
+        class="menu menu-sm dropdown-content hover:bg-green-500 rounded-box z-1 mt-3 w-52 p-2 shadow">
+        <li><a>Product</a></li>
+        <li><a>Services</a></li>
+        <li><a>Contact Us</a></li>
+    </ul>
+</div>
+    <img src="c2-assets/logo-header.png" alt="">
+  </div>
+  <div class="navbar-center hidden lg:flex px-4 py-1">
+    <ul class="menu menu-horizontal px-1">
+      <li><a href="#" class="hover:text-green-500">Product</a></li>
+      <li><a href="#" class="hover:text-green-500">Services</a></li>
+      <li><a href="#" class="hover:text-green-500">Contact Us</a></li>
+    </ul>
+  </div>
+
+ <div class="navbar-end gap-4">
+  <!-- Search Icon -->
+<button class="btn btn-ghost btn-circle">
+  <i data-lucide="search" class="w-5 h-5"></i>
+</button>
+
+<!-- Shopping Icon -->
+<button class="btn btn-ghost btn-circle">
+  <i data-lucide="shopping-bag" class="w-5 h-5"></i>
+</button>
+  <a class="btn rounded-lg border-2 border-gray-500 hover:border-green-500">Login</a>
+  <a class="btn bg-green-500 rounded-lg text-white">Register</a>
+</div>
+
+</div>
+        </nav>
+       
+      </header>
+
+
+
+    <!-- Main Section -->
+      <main>
+
+        <!-- Banner -->
+      <section class="bg-[#f7f4ef] hero bg-base-100 min-h-screen flex flex-col items-center justify-center text-center px-6">
+          <div class="max-w-2xl">
+            <h1 class="text-4xl md:text-5xl font-bold leading-snug">
+              Freshness <span class="text-green-600">You Can</span> Count On,<br>
+              Prices <span class="text-green-600">You’ll Love!</span>
+            </h1>
+            <p class="text-gray-500 mt-4">
+            Shop your daily essentials at unbeatable prices. From fresh produce to pantry staples, 
+            we’ve got you covered every day!
+           </p>
+          </div>
+
+        <div class="mt-10">
+            <img src="c2-assets/hero-vegetables.png" alt="Fresh Vegetables" class="w-full max-w-lg mx-auto" />
+        </div>
+      </section>
+
+ <!-- Services Section -->
+<section class="py-8 bg-white">
+  <div class="max-w-6xl mx-auto px-6 text-center">
+    <h2 class="text-3xl font-bold text-green-500 mb-12">
+      Services
+    </h2>
+
+    <div class=" grid grid-cols-1 md:grid-cols-3 gap-8">
+      
+      <!-- Card 1 -->
+      <div class="bg-amber-50 flex flex-col items-center justify-center text-center p-8 rounded-2xl shadow-md hover:shadow-lg transition">
+        <div class="relative flex items-center justify-center w-20 h-20 rounded-full bg-white shadow-md mb-6">
+          <img src="c2-assets/service.png" alt="24/7 Services" class="w-10 h-10 object-contain mx-auto my-auto" />
+        </div>
+        <h3 class="text-xl font-semibold mb-3">24/7 Services</h3>
+        <p class="text-gray-500 max-w-xs">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero.
+        </p>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="bg-amber-50 flex flex-col items-center justify-center text-center p-8 rounded-2xl shadow-md hover:shadow-lg transition">
+        <div class="relative flex items-center justify-center w-20 h-20 rounded-full bg-white shadow-md mb-6">
+          <img src="c2-assets/delivery.png" alt="Fast Delivery" class="w-10 h-10 object-contain mx-auto my-auto" />
+        </div>
+        <h3 class="text-xl font-semibold mb-3">Fast Delivery</h3>
+        <p class="text-gray-500 max-w-xs">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero.
+        </p>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="bg-amber-50 flex flex-col items-center justify-center text-center p-8 rounded-2xl shadow-md hover:shadow-lg transition">
+        <div class="relative flex items-center justify-center w-20 h-20 rounded-full bg-white shadow-md mb-6">
+          <img src="c2-assets/healthy.png" alt="Healthy Products" class="w-10 h-10 object-contain mx-auto my-auto" />
+        </div>
+        <h3 class="text-xl font-semibold mb-3">Healthy Products</h3>
+        <p class="text-gray-500 max-w-xs">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+     
+       <!-- Popular Products Section -->
+<section class="py-16 bg-[#f7f4ef]">
+  <div class="max-w-7xl mx-auto px-6">
+    <h2 class="text-2xl font-bold text-green-600 mb-8">
+      Popular Products
+    </h2>
+
+    <div class="grid grid-cols-1 lg:grid-cols-4 gap-6">
+      
+      <!-- Left Offer Card -->
+       <div
+        class="bg-gradient-to-br from-green-400 via-green-500 to-green-600 text-white rounded-2xl p-8 flex flex-col justify-between relative overflow-hidden"
+      >
+        <!-- Offer Text -->
+        <div class="z-10">
+          <h3 class="text-3xl font-semibold mb-2">30% off</h3>
+          <p class="text-sm opacity-90 max-w-xs mb-6">
+            Discover a world of tastes. Shop away and save big on your next order!
+          </p>
+          <button
+            class="bg-white text-green-600 font-semibold px-5 py-2 rounded-lg shadow hover:bg-gray-100 transition"
+          >
+            Buy Now
+          </button>
+        </div>
+
+        <!-- Offer Image -->
+        <img
+          src="c2-assets/vegetable-offer.png"
+          alt="Offer Image"
+          class="absolute bottom-0 right-0 w-40 md:w-48 lg:w-56 object-contain"
+        />
+      </div>
+
+
+
+      <!-- Right Product Grid -->
+      <div class="lg:col-span-3 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+        
+        <!-- Product Card -->
+        <div class="bg-white rounded-xl p-4 shadow hover:shadow-md transition">
+          <img src="c2-assets/onion.png" alt="Onion" class="w-20 h-20 object-contain mx-auto mb-4">
+          <h3 class="text-gray-800 font-semibold text-sm">Onion 1KG</h3>
+          <div class="flex items-center justify-between mt-2 text-sm text-gray-500">
+            <span>⭐ 4.5</span>
+            <span>$29.99</span>
+          </div>
+        </div>
+
+        <div class="bg-white rounded-xl p-4 shadow hover:shadow-md transition">
+          <img src="c2-assets/tomato.png" alt="Tomato" class="w-20 h-20 object-contain mx-auto mb-4">
+          <h3 class="text-gray-800 font-semibold text-sm">Tomato 500g</h3>
+          <div class="flex items-center justify-between mt-2 text-sm text-gray-500">
+            <span>⭐ 4.5</span>
+            <span>$24.99</span>
+          </div>
+        </div>
+
+        <div class="bg-white rounded-xl p-4 shadow hover:shadow-md transition">
+          <img src="c2-assets/tomato.png" alt="Tomato" class="w-20 h-20 object-contain mx-auto mb-4">
+          <h3 class="text-gray-800 font-semibold text-sm">Tomato 500g</h3>
+          <div class="flex items-center justify-between mt-2 text-sm text-gray-500">
+            <span>⭐ 4.5</span>
+            <span>$24.99</span>
+          </div>
+        </div>
+
+        <div class="bg-white rounded-xl p-4 shadow hover:shadow-md transition">
+          <img src="c2-assets/tomato.png" alt="Tomato" class="w-20 h-20 object-contain mx-auto mb-4">
+          <h3 class="text-gray-800 font-semibold text-sm">Tomato 500g</h3>
+          <div class="flex items-center justify-between mt-2 text-sm text-gray-500">
+            <span>⭐ 4.5</span>
+            <span>$24.99</span>
+          </div>
+        </div>
+
+        <div class="bg-white rounded-xl p-4 shadow hover:shadow-md transition">
+          <img src="c2-assets/tomato.png" alt="Tomato" class="w-20 h-20 object-contain mx-auto mb-4">
+          <h3 class="text-gray-800 font-semibold text-sm">Tomato 500g</h3>
+          <div class="flex items-center justify-between mt-2 text-sm text-gray-500">
+            <span>⭐ 4.5</span>
+            <span>$24.99</span>
+          </div>
+        </div>
+
+        <div class="bg-white rounded-xl p-4 shadow hover:shadow-md transition">
+          <img src="c2-assets/tomato.png" alt="Tomato" class="w-20 h-20 object-contain mx-auto mb-4">
+          <h3 class="text-gray-800 font-semibold text-sm">Tomato 500g</h3>
+          <div class="flex items-center justify-between mt-2 text-sm text-gray-500">
+            <span>⭐ 4.5</span>
+            <span>$24.99</span>
+          </div>
+        </div>
+        
+        <div class="bg-white rounded-xl p-4 shadow hover:shadow-md transition">
+          <img src="c2-assets/tomato.png" alt="Tomato" class="w-20 h-20 object-contain mx-auto mb-4">
+          <h3 class="text-gray-800 font-semibold text-sm">Tomato 500g</h3>
+          <div class="flex items-center justify-between mt-2 text-sm text-gray-500">
+            <span>⭐ 4.5</span>
+            <span>$24.99</span>
+          </div>
+        </div>
+
+        <div class="bg-white rounded-xl p-4 shadow hover:shadow-md transition">
+          <img src="c2-assets/potato.png" alt="Potato" class="w-20 h-20 object-contain mx-auto mb-4">
+          <h3 class="text-gray-800 font-semibold text-sm">Potato 1KG</h3>
+          <div class="flex items-center justify-between mt-2 text-sm text-gray-500">
+            <span>⭐ 4.5</span>
+            <span>$27.99</span>
+          </div>
+        </div>
+
+        <!-- Repeat cards as needed -->
+        <div class="bg-white rounded-xl p-4 shadow hover:shadow-md transition">
+          <img src="c2-assets/onion.png" alt="Onion" class="w-20 h-20 object-contain mx-auto mb-4">
+          <h3 class="text-gray-800 font-semibold text-sm">Onion 1KG</h3>
+          <div class="flex items-center justify-between mt-2 text-sm text-gray-500">
+            <span>⭐ 4.5</span>
+            <span>$29.99</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+     
+
+      
+
+
+
+
+      </main>
+
+
+     
+    <!-- Footer Section -->
+      <footer></footer>
+
+
+      <script>lucide.createIcons();</script>
+
+</body>
+</html>
